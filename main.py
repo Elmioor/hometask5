@@ -92,6 +92,30 @@
 
 
 # 5. Создать (программно) текстовый файл, записать в него программно набор чисел, разделенных пробелами. Программа должна подсчитывать сумму чисел в файле и выводить ее на экран.
+# import random
+# file_five = open('task_five_file.txt','w')
+# line_to_write = ''
+# numbers_ammount = random.randint(1, 10)
+# numbers_arr = []
+# counter = 1
+# while counter <= numbers_ammount:
+#     randomint = random.randint(0, 999)
+#     numbers_arr.append(str(randomint))
+#     counter += 1
+# print(numbers_arr)
+# line_to_write = str(" ".join(numbers_arr))
+# file_five.write(line_to_write)
+# file_five.close()
+# print(line_to_write)
+# with open("task_five_file.txt", "r+") as f_obj:
+#     summ_of_numbers = 0
+#     for linne in f_obj:
+#         sp_ln = linne.split()
+#         for inttosum in sp_ln:
+#             summ_of_numbers += int(inttosum)
+#
+#         print(summ_of_numbers)
+
 # 6. Необходимо создать (не программно) текстовый файл, где каждая строка описывает учебный предмет и наличие лекционных, практических и лабораторных занятий по этому предмету и их количество. Важно, чтобы для каждого предмета не обязательно были все типы занятий. Сформировать словарь, содержащий название предмета и общее количество занятий по нему. Вывести словарь на экран.
 # Примеры строк файла: Информатика: 100(л) 50(пр) 20(лаб).
 # Физика: 30(л) — 10(лаб)
