@@ -17,17 +17,17 @@
 
 # 2. Создать текстовый файл (не программно), сохранить в нем несколько строк, выполнить подсчет количества строк, количества слов в каждой строке.
 
-file_two = open('file_for_task_two.txt','r')
-string_counnt=1
-for line in file_two:
-    word_arr = line.split(' ')
-    print(word_arr)
-    print('words count in line is ' + str(len(word_arr)))
-    if '\n' in line:
-        string_counnt += 1
-
-print("\n" +" total strings in file is: " + str(string_counnt))
-file_two.close()
+# file_two = open('file_for_task_two.txt','r')
+# string_counnt=1
+# for line in file_two:
+#     word_arr = line.split(' ')
+#     print(word_arr)
+#     print('words count in line is ' + str(len(word_arr)))
+#     if '\n' in line:
+#         string_counnt += 1
+#
+# print("\n" +" total strings in file is: " + str(string_counnt))
+# file_two.close()
 
 # 3. Создать текстовый файл (не программно), построчно записать фамилии сотрудников и величину их окладов (не менее 10 строк). Определить, кто из сотрудников имеет оклад менее 20 тыс., вывести фамилии этих сотрудников. Выполнить подсчет средней величины дохода сотрудников.
 # Пример файла:
@@ -35,7 +35,23 @@ file_two.close()
 # Иванов 23543.12
 # Петров 13749.32
 #
-# Создать (не программно) текстовый файл со следующим содержимым:
+# file_three = open('file_task_three.txt','r')
+# total_ammount = 0
+# string_count=1
+# for line in file_three:
+#     line_comb =line.split(' ')
+#     if '\n'in line:
+#         string_count +=1
+#     if int(line_comb[1]) < 20000:
+#         print(line_comb[0])
+#     total_ammount += int(line_comb[1])
+#
+# #print(string_count)
+# #print(total_ammount)
+# print("averege salalry is: " + str(total_ammount/string_count))
+# file_three.close()
+
+# 4. Создать (не программно) текстовый файл со следующим содержимым:
 # One — 1
 # Two — 2
 # Three — 3
