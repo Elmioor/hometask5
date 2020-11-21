@@ -155,3 +155,30 @@
 # [{"firm_1": 5000, "firm_2": 3000, "firm_3": 1000}, {"average_profit": 2000}]
 #
 # Подсказка: использовать менеджер контекста.
+import json
+with open('seven_task_file.txt','r',encoding="utf-8") as file7_obj:
+    summ_of_incomes = 0
+    firms_with_positive_income = 0
+    firms_array = []
+    for line in file7_obj:
+        dict_firm = {}
+        income = 0
+        no_end_line = line.replace('\n', ' ')
+        sp_line= no_end_line.split(' ')
+        income = int(sp_line[2]) - int(sp_line[3])
+        if income > 0:
+            firms_with_positive_income += 1
+            summ_of_incomes +=income
+        dict_firm[sp_line[0]] = income
+        #print(dict_firm)
+        firms_array.append(dict_firm)
+    averege_income = summ_of_incomes /firms_with_positive_income
+    firms_array.append({'average_profit': averege_income })
+    print(firms_array)
+    print('')
+
+    with open('seven_task_file.json','w',encoding="utf-8") as file7_j_obj:
+
+        json.dump(firms_array, file7_j_obj)
+        wanna_look_at = json.dumps(firms_array)
+        print(wanna_look_at)

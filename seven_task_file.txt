@@ -1,0 +1,5 @@
+firm_1 ООО 10000 5000
+firm_2 kenny 1324131 5416531
+firm_3 cartman 22045 45544
+firm_4 kyle 44000 4554
+firm_5 stan 1233 12357
