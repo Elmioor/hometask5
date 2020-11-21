@@ -122,6 +122,26 @@
 # Физкультура: — 30(пр) —
 # Пример словаря: {“Информатика”: 170, “Физика”: 40, “Физкультура”: 30}
 #
+# task_six_dict = {}
+# with open('six_task.txt','r',encoding="utf-8") as file6_obj:
+#     for line in file6_obj:
+#         hours_summ = 0
+#         repl_line = line.replace('(', ' ')
+#         sp_line = repl_line.split(' ')
+#         for searching_int in sp_line:
+#             try:
+#                 trytoint = int(searching_int)
+#                 hours_summ += trytoint
+#             except ValueError:
+#                 pass
+#         task_six_dict[sp_line[0]] = hours_summ
+#         #print(hours_summ)
+#
+# print(task_six_dict)
+
+
+#{“Информатика”: 170, “Физика”: 40, “Физкультура”: 30}
+
 # 7. Создать вручную и заполнить несколькими строками текстовый файл, в котором каждая строка должна содержать данные о фирме: название, форма собственности, выручка, издержки.
 # Пример строки файла: firm_1 ООО 10000 5000.
 #
